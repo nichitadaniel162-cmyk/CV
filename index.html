@@ -1,90 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-    <title>Proiect Laborator - Aplicatie Web</title>
+    <meta charset="UTF-8">
+    <title>Platforma Organizare Nunti</title>
 </head>
 <body>
 
     <center>
-        <h1>Propunere Aplicatie Web: TaskManager Pro</h1>
+        <h1>Aplicație Web: DreamWedding Planner</h1>
     </center>
 
     <div align="center">
         <p>
-            Aceasta pagina descrie <strong>aplicatia web</strong> pe care doresc sa o realizez la acest laborator. <br>
-            Este o platforma dedicata <b>managementului de proiecte</b>. 
-            <span title="Informatii despre scopul proiectului">Focusul principal</span> este pe usurinta in utilizare.
+            Aceasta este o <strong>aplicație web</strong> dedicată organizării evenimentelor.<br>
+            Aici poți planifica <b>cea mai importantă zi</b> din viața ta, pas cu pas. 
+            <span title="Creat cu pasiune pentru evenimente reușite">Fiecare detaliu contează pentru noi.</span>
         </p>
-        <a href="https://github.com" target="_blank" name="link_github">Viziteaza contul meu de GitHub</a>
+        <a href="https://github.com/nichitadaniel162-cmyk" target="_blank" name="link_portofoliu">Vezi portofoliul meu pe GitHub</a>
     </div>
 
-    <h2>Detalii Aplicatie</h2>
+    <h2>Despre Serviciile Noastre</h2>
     
-    <img src="https://via.placeholder.com/150" alt="Logo Aplicatie TaskManager" width="150" height="150" title="Logo-ul proiectului">
+    <img src="https://via.placeholder.com/250x150" alt="Poza decoratiuni nunta" width="250" height="150" title="Exemplu de decor pentru sala">
 
-    <h3>Functionalitati principale:</h3>
+    <h3>Ce putem configura în aplicație:</h3>
     <ul>
-        <li>Crearea de task-uri noi si organizarea lor pe categorii</li>
-        <li>Atribuirea task-urilor pe diferiti utilizatori</li>
+        <li>Managementul listei de invitați și așezarea la mese</li>
+        <li>Alegerea muzicii, meniului și a decorațiunilor florale</li>
     </ul>
 
-    <h3>Pasii de dezvoltare (Roadmap):</h3>
+    <h3>Pașii principali de organizare:</h3>
     <ol start="1">
-        <li>Design UI/UX si prototipare</li>
-        <li>Implementare Frontend (HTML, CSS, JS)</li>
-        <li>Dezvoltare Backend si Baze de date</li>
+        <li>Alegerea locației și a datei evenimentului</li>
+        <li>Trimiterea invitațiilor digitale</li>
+        <li>Confirmarea furnizorilor (Foto, Video, DJ)</li>
     </ol>
 
-    <h2>Echipa si Resurse</h2>
-    <table border="1" width="80%" bgcolor="#f9f9f9">
+    <h2>Pachete de Organizare</h2>
+    <table border="1" width="80%" bgcolor="#fff0f5">
         <tr align="center" valign="middle">
-            <th colspan="2">Echipa de Dezvoltare</th>
-            <th>Rol in proiect</th>
+            <th colspan="2">Pachet și Preț Estimativ</th>
+            <th>Ce include pachetul</th>
         </tr>
         <tr align="left" valign="top">
-            <td>Popescu</td>
-            <td>Ion</td>
-            <td bgcolor="#e6f7ff">Full-Stack Developer</td>
+            <td>Pachetul Gold</td>
+            <td>4500 EUR</td>
+            <td bgcolor="#ffffff">Foto, Video, DJ, Decorațiuni sală, Fum greu</td>
         </tr>
     </table>
 
-    <h2>Formular de Feedback (Demo)</h2>
+    <h2>Formular Configurare Nuntă (Simulator)</h2>
     <form>
         <fieldset>
-            <legend>Lasa-ne parerea ta</legend>
+            <legend>Creează evenimentul tău</legend>
 
             <p>
-                Nume utilizator (generat automat):<br>
-                <input type="text" name="nume_user" value="UserStudent123" size="30" maxlength="50" readonly>
+                Cod Eveniment (generat automat):<br>
+                <input type="text" name="cod_nunta" value="WED-2026-CLUJ" size="25" maxlength="30" readonly>
             </p>
 
             <p>
-                Nota pentru idee (maxim 10):<br>
-                <input type="number" name="nota" max="10" step="1" value="10">
+                Număr maxim de invitați permisi în sala aleasă:<br>
+                <input type="number" name="nr_invitati" max="300" step="10" value="150">
             </p>
 
             <p>
-                Ce functionalitati preferi? (Poti selecta mai multe):<br>
-                <select name="functii_alese" multiple size="3">
-                    <option value="notificari" selected>Notificari pe Email</option>
-                    <option value="rapoarte">Generare Rapoarte PDF</option>
-                    <option value="chat">Chat Integrat in echipa</option>
+                Alege serviciile extra dorite (ține apăsat CTRL pentru mai multe):<br>
+                <select name="servicii_extra" multiple size="4">
+                    <option value="fum_greu" selected>Fum greu pentru valsul mirilor</option>
+                    <option value="cabina_foto">Cabină Foto / Oglindă magică</option>
+                    <option value="cvartet">Cvartet pentru primirea invitaților</option>
+                    <option value="artificii">Artificii de exterior</option>
                 </select>
             </p>
 
             <p>
-                Bifeaza daca esti de acord cu termenii aplicatiei:<br>
-                <input type="checkbox" name="termeni" value="da" checked> Sunt de acord
+                <input type="checkbox" name="acord_termeni" value="da" checked> Sunt de acord ca pozele de la eveniment să fie folosite în portofoliul agenției
             </p>
 
             <p>
-                Optiune indisponibila in varianta de baza:<br>
-                <input type="radio" name="optiune_pro" value="pro" disabled> Cont Premium (Dezactivat)
+                Pachet Platinum (Indisponibil în acest sezon):<br>
+                <input type="radio" name="pachet_plat" value="plat" disabled> Rezervă Pachet Platinum
             </p>
 
             <p>
-                Lasa-ne un comentariu sau o sugestie:<br>
-                <textarea name="comentarii" rows="5" cols="40">Scrie aici sugestiile tale despre cum putem imbunatati ideea...</textarea>
+                Mențiuni speciale (alergii invitați, preferințe muzicale etc.):<br>
+                <textarea name="mentiuni" rows="4" cols="50">Scrie aici detaliile importante pentru noi...</textarea>
             </p>
         </fieldset>
     </form>
